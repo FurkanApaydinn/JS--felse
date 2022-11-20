@@ -149,7 +149,7 @@ if (vücutkitleendeksiengin > vücutkitleendeksimurat) {
 //   console.log("Neden 23 değil");
 // }
 
-const komşusayı = prompt("ülkenizin kaç komşusu var");
+const komşusayı = Number(prompt("ülkenizin kaç komşusu var"));
 if (komşusayı == 1) {
   console.log("Sadece 1 komşu");
 } else if (komşusayı > 1) {
@@ -157,5 +157,5 @@ if (komşusayı == 1) {
 } else {
   console.log("komşu yok");
 }
-console.log(Number(komşusayı));
+
 
