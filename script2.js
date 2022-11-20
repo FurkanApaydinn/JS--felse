@@ -92,3 +92,70 @@ if (vücutkitleendeksiengin > vücutkitleendeksimurat) {
     `Muratın ${vücutkitleendeksimurat}'si Engininin ${vücutkitleendeksiengin} daha büyük`
   );
 }
+
+//Type conversion & Connection
+// const girişyılı = "1986";
+// console.log(Number(girişyılı), girişyılı);
+// console.log(Number(girişyılı) + 18);
+// console.log(Number("Furkan"));
+// console.log(typeof NaN);
+// // //
+// Type coercion
+// console.log("ben" + 36 + "Yaşındayım");
+// console.log("ben" + 36 + "Yaşındayım");
+// ------ eksi operatörü dizeleri sayıya dönüştürür..--------//
+// console.log("36" - "10" - 3); //23
+// console.log("36" + "10" + 3); //36103
+
+//----------------- Truthy & Falsy Değerler--------------//
+
+// 5 falsy değer:0,"",underfined,null,NaN
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean("Furkan"));
+// console.log(Boolean(1));
+// console.log(Boolean(""));
+// const money = 0;
+// if (money) {
+//   console.log("Sakın Harcama");
+// } else {
+//   console.log("harcamalarına dikkat etmelisin");
+// }
+
+// let yükseklik;// değer atamadığımız için false alanı çalışacak yani else durumu
+// if (yükseklik) {
+//   console.log("Yükseklik tanımlanmış");
+// } else {
+//   console.log("Yükseklik yok");
+// }
+
+//--------------- Eguaility Operatör-----------
+// const yaş = 18;
+// if (yaş === 18) {
+//   console.log("Yeni Yetişkin oldum");
+// }
+// const favorinumber = Number(prompt("en sevdiğin numara"));
+// console.log(favorinumber);
+// console.log(typeof favorinumber);
+
+// if (favorinumber === 23) {
+//   console.log("23 bir sayıdır");
+// } else if (favorinumber === 7) {
+//   console.log("7 şanlı sayım");
+// } else {
+//   console.log(" sayı 23 ve 7 değil");
+// }
+// if (favorinumber !== 23) {
+//   console.log("Neden 23 değil");
+// }
+
+const komşusayı = prompt("ülkenizin kaç komşusu var");
+if (komşusayı == 1) {
+  console.log("Sadece 1 komşu");
+} else if (komşusayı > 1) {
+  console.log("1 den fazla komşu");
+} else {
+  console.log("komşu yok");
+}
+console.log(Number(komşusayı));
+
