@@ -261,15 +261,29 @@
 // } else {
 //   console.log(`${ulke} kriterlerinizi karşılamıyor`);
 // }
+// const kaplanlar = (1000 + 108 + 110) / 3;
+// const kobralar = (900 + 108 + 110) / 3;
+// // console.log(kaplanlar, kobralar);
+// if (kaplanlar > kobralar && kaplanlar > 100) {
+//   console.log("kazananlar kaplanlar");
+// } else if (kaplanlar === kobralar && kaplanlar >= 100 && kobralar > 100) {
+//   console.log("eşit");
+// } else if (kobralar > kaplanlar && kobralar > 100) {
+//   console.log("kazanan kobralar");
+// } else {
+//   console.log("kazanan yok");
+// }
 const kaplanlar = (1000 + 108 + 110) / 3;
 const kobralar = (900 + 108 + 110) / 3;
-// console.log(kaplanlar, kobralar);
-if (kaplanlar > kobralar && kaplanlar > 100) {
-  console.log("kazananlar kaplanlar");
-} else if (kaplanlar === kobralar && kaplanlar >= 100 && kobralar > 100) {
-  console.log("eşit");
-} else if (kobralar > kaplanlar && kobralar > 100) {
-  console.log("kazanan kobralar");
+console.log(kaplanlar, kobralar);
+if (kaplanlar >= 100 || kobralar >= 100) {
+  if (kaplanlar > kobralar) {
+    console.log("kaplanlar kazandı");
+  } else if (kobralar > kaplanlar) {
+    console.log("kobralar kazandı");
+  } else {
+    console.log("Beraberlik");
+  }
 } else {
-  console.log("kazanan yok");
+  console.log("Kazanan yok");
 }
